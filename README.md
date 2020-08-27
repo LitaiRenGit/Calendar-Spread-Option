@@ -1,0 +1,5 @@
+# Calendar-Spread-Option
+The main objective of our project is study of Calendar Spread Options. For an option, the most important thing is its pricing formula and Greeks. Calendar Spread Option doesn't have a trivial close-form pricing model, therefore people designed approximation and Monte Carlo simulation to price it.
+Note that crude oil futures price once dropped deeply below 0, but traditonal GBM assumption doesn't support this phenomenon, and stochastic process with jump can't also explain such deeply negative price. Thus, we compared Black and Bachilier model to see which framework can provides the most accurate Greeks.
+The accuracy of Greeks (especially delta) is measured by the replication error, ie. using respective delta formula to replicate calendar spread options by underlying futures and obtain the replication error between real option price and replication payoff.
+In addition, we invented brand new calibration methods, breaking good and hedging good, to calibrate implied correlation (a parameter in CSO's pricing model). They are independent of any option market infomation.
